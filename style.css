@@ -172,6 +172,7 @@ header li>a {
     display: flex;
     position: relative;
     line-height: inherit;
+    transition: var(--trans-color);
 }
 
 /*HEADER-TOP*/
