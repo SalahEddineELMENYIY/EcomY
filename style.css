@@ -219,6 +219,11 @@ header li>a {
 }
 
 /*HEADER-NAV*/
+.header-nav {
+    padding: 0.5em 0;
+    margin-bottom: 1.5em;
+    border-bottom: 1px solid var(--border-color);
+}
 
 .trigger {
     font-size: 1.5em;
@@ -317,5 +322,19 @@ nav .fly-item {
 
     .mobile-hide {
         display: block;
+    }
+
+    .logo a {
+        margin-right: 2em;
+    }
+
+    .header-nav {
+        padding: 0;
+        margin: 0;
+        border-bottom: 0;
+    }
+
+    .header-nav .right li>a {
+        margin-left: 1em;
     }
 }
