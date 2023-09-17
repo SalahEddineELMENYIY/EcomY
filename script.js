@@ -1,8 +1,8 @@
 /*copy menu for mobile*/
-function copy(par1, par2) {
-    var param1 = document.querySelector(par1);
-    var param2 = document.querySelector(par2);
-    param2.innerHTML = param1.innerHTML;
+function copy(from, into) {
+    var copyFrom = document.querySelector(from);
+    var pastInto = document.querySelector(into);
+    pastInto.innerHTML = copyFrom.innerHTML;
 }
 copy('.dpt-cat', '.departements');
 copy('.header-nav nav', '.off-canvas nav');
