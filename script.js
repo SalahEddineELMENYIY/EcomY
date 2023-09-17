@@ -6,4 +6,4 @@ function copy(from, into) {
 }
 copy('.dpt-cat', '.departements');
 copy('.header-nav nav', '.off-canvas nav');
-copy('.header-top', '.off-canvas .thetop-nav');
+copy('.header-top .wrapper', '.off-canvas .thetop-nav');
