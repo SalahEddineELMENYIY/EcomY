@@ -30,7 +30,7 @@ closeButton.addEventListener('click', function () {
 })
 
 /*Slider Script imported*/
-const swiper = new swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
     loop: true,
     pagination: {
         el: '.swiper-pagination',
