@@ -486,6 +486,10 @@ form.search button:hover {
     background-color: var(--white-color);
     overflow-y: auto;
     z-index: 1000;
+    transform: translateX(-100%);
+    visibility: hidden;
+    transition: transform 0.4s, visiblity 0.4s;
+    will-change: transform, visiblity;
 }
 
 .off-canvas {
