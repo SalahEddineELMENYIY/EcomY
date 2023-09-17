@@ -492,6 +492,12 @@ form.search button:hover {
     will-change: transform, visiblity;
 }
 
+.showmenu .site-off {
+    transform: translateX(0);
+    visibility: visible;
+    transition: transform 0.4s 0s, visiblity 0s 0s;
+}
+
 .off-canvas {
     width: var(--percent100);
     height: var(--percent100);
