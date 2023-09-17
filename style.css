@@ -615,14 +615,22 @@ form.search button:hover {
 
 /*SLIDER*/
 
-.slider>div>.wrapper {
-    width: calc(100% - (300px + 2em));
-    margin-left: auto;
-}
-
 .slider .item {
     position: relative;
     height: 474px;
+}
+
+.slider .item::before {
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 450px;
+    height: 300px;
+    background-color: var(--white-color);
+    z-index: 1;
+    filter: blur(50px);
+    opacity: 0.8;
 }
 
 .slider .text-content {
@@ -652,6 +660,10 @@ form.search button:hover {
     color: var(--secondary-dark-color);
     text-transform: uppercase;
     letter-spacing: -1px;
+}
+
+.swiper-pagination .swiper-pagination-bullet-active {
+    background-color: var(--secondary-dark-color);
 }
 
 /*RESPONSIVE*/
@@ -840,5 +852,11 @@ form.search button:hover {
 
     .dpt-menu .has-child:hover .mega {
         display: flex;
+    }
+
+    /*SLIDER*/
+    .slider>div>.wrapper {
+        width: calc(100% - (300px + 2em));
+        margin-left: auto;
     }
 }
