@@ -28,3 +28,11 @@ menuButton.addEventListener('click', function () {
 closeButton.addEventListener('click', function () {
     addClass.classList.remove('showmenu');
 })
+
+/*Slider Script imported*/
+const swiper = new swiper('.swiper', {
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+    }
+});
