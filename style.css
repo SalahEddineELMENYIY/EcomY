@@ -888,6 +888,16 @@ form.search button:hover {
     position: relative;
 }
 
+.products .stock-danger {
+    color: var(--primary-color);
+}
+
+.flexwrap .row {
+    flex: 0 0 100%;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
 /*BIG-PRODUCT*/
 .products.big .item {
     flex-direction: column;
