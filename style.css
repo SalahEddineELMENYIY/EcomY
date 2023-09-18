@@ -489,6 +489,7 @@ form.search button:hover {
     transform: translateX(-100%);
     visibility: hidden;
     transition: transform 0.4s, visiblity 0.4s;
+    /*UNKNOWN*/
     will-change: transform, visiblity;
 }
 
@@ -501,6 +502,7 @@ form.search button:hover {
 .off-canvas {
     width: var(--percent100);
     height: var(--percent100);
+    /*UNKNOWN*/
     touch-action: auto;
     padding: 1.5em;
 }
@@ -845,6 +847,7 @@ form.search button:hover {
     font-size: 1em;
     overflow: hidden;
     text-overflow: ellipsis;
+    /*UNKNOWN*/
     -webkit-line-clamp: 2;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -928,12 +931,21 @@ form.search button:hover {
     font-weight: 400;
 }
 
+/*FEATURES*/
+
+
+
+
 /*RESPONSIVE*/
 
 @media screen and (min-width: 768px) {
 
     .products .price .current {
         font-size: 1.25em;
+    }
+
+    .products.mini {
+        flex: 0 0 50%;
     }
 }
 
@@ -964,7 +976,7 @@ form.search button:hover {
         margin-left: 1em;
     }
 
-    /*MEGA : Women Categories*/
+    /*MEGA*/
     nav .mega {
         position: absolute;
         width: var(--percent100);
