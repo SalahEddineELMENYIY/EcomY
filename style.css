@@ -1069,8 +1069,19 @@ form.search button:hover {
 .newsletter form {
     max-width: 500px;
     width: var(--percent100);
+}
+
+.widgets {
+    padding: 3.5em 2.5em;
+    background-color: var(--light-bg-color);
 
 }
+
+.widgets {}
+
+.widgets {}
+
+.widgets {}
 
 /*RESPONSIVE*/
 
@@ -1088,7 +1099,9 @@ form.search button:hover {
     }
 
     .banner .row,
-    .products.mini {
+    .products.mini,
+
+    .widgets .row {
         flex: 0 0 50%;
     }
 
@@ -1300,7 +1313,8 @@ form.search button:hover {
         max-height: 373px;
     }
 
-    .products.main .item {
+    .products.main .item,
+    .widgets .row {
         flex: 0 0 25%;
     }
 
