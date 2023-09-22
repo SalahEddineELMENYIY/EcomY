@@ -36,3 +36,14 @@ const swiper = new Swiper('.swiper', {
         el: '.swiper-pagination',
     }
 });
+
+/*Search Bottom Script*/
+const searchButton = document.querySelector('.t-search');
+const tClose = document.querySelector('.search-close'),
+    showClass = document.querySelector('.site');
+searchButton.addEventListener('click', function () {
+    showClass.classList.toggle('showsearch');
+})
+tClose.addEventListener('click', function () {
+    showClass.classList.remove('showsearch');
+})

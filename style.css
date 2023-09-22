@@ -1168,6 +1168,14 @@ form.search button:hover {
     padding: 2.5em 0;
     background-color: var(--secondary-dark-color);
     z-index: 1000;
+    visibility: hidden;
+    opacity: 0;
+    will-change: visibility, opacity;
+}
+
+.showsearch .search-bottom {
+    visibility: inherit;
+    opacity: 1;
 }
 
 .search-bottom .t-close {
@@ -1178,6 +1186,26 @@ form.search button:hover {
 
 .search-bottom .t-close:hover {
     background-color: var(--primary-color);
+}
+
+/*OVERLAY*/
+
+.overlay {
+    position: fixed;
+    width: var(--percent100);
+    height: var(--percent100);
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    opacity: 0;
+    will-change: opacity, visibility;
+}
+
+.showmenu .overlay {
+    opacity: 1;
+    visibility: inherit;
 }
 
 /*RESPONSIVE*/
