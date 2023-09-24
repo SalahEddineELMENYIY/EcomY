@@ -47,3 +47,10 @@ searchButton.addEventListener('click', function () {
 tClose.addEventListener('click', function () {
     showClass.classList.remove('showsearch');
 })
+
+/*Show Departement Menu*/
+const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
+    dptClass = document.querySelector('.site');
+dptButton.addEventListener('click', () => {
+    dptClass.classList.toggle('showdpt');
+});
