@@ -54,3 +54,28 @@ const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
 dptButton.addEventListener('click', () => {
     dptClass.classList.toggle('showdpt');
 });
+
+/*Products Image Slider*/
+var productThumb = new Swiper('.small-image', {
+    loop: true,
+    spaceBetween: 10,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32
+        }
+    }
+});
+var productBig = new Swiper('.big-image', {
+    loop: true,
+    autoHeight: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+        swiper: productThumb
+    }
+});
