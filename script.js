@@ -1,3 +1,16 @@
+//stock products bar width percentage 
+var stocks = document.querySelectorAll('.products .stock');
+document.addEventListener('DOMContentLoaded', () => {
+    stocks.forEach((stock) => {
+        let available = parseInt(stock.querySelector('.qty-available').innerHTML),
+            sold = parseInt(stock.querySelector('.qty-sold').innerHTML),
+            total = sold + available,
+            percent = sold * 100 / total;
+        stock.querySelector('div.available').style.width = percent + "%";
+
+    })
+}
+)
 /*copy menu for mobile*/
 function copy(from, into) {
     var copyFrom = document.querySelector(from);

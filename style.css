@@ -1354,7 +1354,7 @@ form.search button:hover {
     z-index: 1;
 }
 
-.products .variant input {
+:where(.products .variant, .filter-block:not(.pricing)) input {
     /*UNKOWN*/
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
@@ -1417,6 +1417,10 @@ form.search button:hover {
     padding: 0.5em;
     border: 1px solid var(--border-color);
     margin: 0 2em 2em 0;
+}
+
+.products .qty-control .circle::before {
+    opacity: 0;
 }
 
 .products .actions :where(input, button) {
@@ -1632,7 +1636,144 @@ form label {
     text-transform: uppercase;
 }
 
+.page-single .stock {
+    margin-bottom: 2em;
+    margin-top: auto;
+}
 
+.page-single .stock .qty span:last-child {
+    color: initial;
+}
+
+.single-page .stock .bar {
+    height: 10px;
+}
+
+.page-single .stock .bar .available {
+    margin: 0;
+    border-radius: 0;
+    background-color: var(--secondary-dark-color);
+}
+
+.related-products .content {
+    height: var(--percent100);
+}
+
+.related-products .offer {
+    margin: 0;
+}
+
+.related-products .offer p {
+    margin: 0 1em 0 0;
+    text-transform: none;
+    line-height: 1;
+}
+
+.related-products .offer ul li {
+    width: 28px;
+    height: 28px;
+    font-size: var(--font-small);
+    padding: 0.5em 0.25em;
+}
+
+.related-products .content.stock {
+    margin-top: auto;
+}
+
+.filter-block {
+    margin-bottom: 1em;
+    padding-bottom: 1em;
+}
+
+.filter-block:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.filter-block h4 {
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.filter-block li {
+    display: flex;
+    font-size: 0.9em;
+    position: relative;
+    line-height: 2;
+}
+
+.filter-block label .checked {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    line-height: 0;
+    display: inline-block;
+    border: 2px solid var(--secondary-dark-color);
+    vertical-align: text-top;
+    margin: 0 7px 0 0;
+    cursor: pointer;
+}
+
+.filter-block label .checked::before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background-color: var(--secondary-dark-color);
+    top: 2px;
+    left: 2px;
+    opacity: 0;
+}
+
+.filter-block input:checked+label .checked::before {
+    opacity: 1;
+}
+
+.filter-block li .count {
+    margin-left: auto;
+    color: var(--light-text-color);
+}
+
+.bycolor label[for="cored"]::before {
+    background-color: var(--primary-color);
+}
+
+.bycolor label[for="colight"]::before {
+    background-color: var(--border-color);
+}
+
+.bycolor input:checked+label {
+    background-color: transparent;
+    border: 2px solid var(--dark-color);
+}
+
+input[type="range"] {
+    /*UNKOWN*/
+    -webkit-appearance: none;
+    width: var(--percent100);
+}
+
+input[type="range"]:focus {
+    outline: 0;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+    width: var(--percent100);
+    height: 5px;
+    cursor: pointer;
+    background-color: var(--border-color);
+    box-shadow: none;
+    border: 0;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    z-index: 2;
+    position: relative;
+    height: 18px;
+    width: 14px;
+    background-color: var(--primary-color);
+    -webkit-appearance: none;
+    margin-top: -7px;
+}
 
 /*RESPONSIVE*/
 
