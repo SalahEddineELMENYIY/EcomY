@@ -61,6 +61,7 @@ tClose.addEventListener('click', function () {
     showClass.classList.remove('showsearch');
 })
 
+<<<<<<< HEAD
 /*Show Departement Menu*/
 const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
     dptClass = document.querySelector('.site');
@@ -69,10 +70,22 @@ dptButton.addEventListener('click', () => {
 });
 
 /*Products Image Slider*/
+=======
+//show dpt menu
+
+const dptButton = document.querySelector('.dpt-cat .dpt-trigger'),
+    dptClass = document.querySelector('.site');
+dptButton.addEventListener('click', function () {
+    dptClass.classList.toggle('showdpt')
+})
+
+///product image slider 
+>>>>>>> b47e3d82c8a9939115f1c98e3ffaa405fb83ab43
 var productThumb = new Swiper('.small-image', {
     loop: true,
     spaceBetween: 10,
     slidesPerView: 3,
+<<<<<<< HEAD
     freeMode: true,
     watchSlidesProgress: true,
     breakpoints: {
@@ -84,11 +97,46 @@ var productThumb = new Swiper('.small-image', {
 var productBig = new Swiper('.big-image', {
     loop: true,
     autoHeight: true,
+=======
+    freemode: true,
+    watchSlidesProgress: true,
+    breakpoints: {
+        481: {
+            spaceBetween: 32,
+        }
+    }
+});
+
+var productBig = new Swiper ('.big-image', {
+    loop:true,
+    autoHeight:true,
+>>>>>>> b47e3d82c8a9939115f1c98e3ffaa405fb83ab43
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
     },
     thumbs: {
+<<<<<<< HEAD
         swiper: productThumb
     }
 });
+=======
+        swiper: productThumb,    
+    }
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> b47e3d82c8a9939115f1c98e3ffaa405fb83ab43
