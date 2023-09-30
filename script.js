@@ -9,8 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
         stock.querySelector('div.available').style.width = percent + "%";
 
     })
-}
-)
+})
 /*copy menu for mobile*/
 function copy(from, into) {
     var copyFrom = document.querySelector(from);
@@ -24,6 +23,7 @@ copy('.header-top .wrapper', '.off-canvas .thetop-nav');
 /*show sub menu on mobile*/
 const subMenu = document.querySelectorAll('.has-child .icon-small');
 subMenu.forEach((menu) => menu.addEventListener('click', toggle));
+
 function toggle(e) {
     e.preventDefault();
     subMenu.forEach((item) => item != this ? item.closest('.has-child').classList.remove('expand') : null);
@@ -92,3 +92,26 @@ var productBig = new Swiper('.big-image', {
         swiper: productThumb
     }
 });
+
+
+// show cart on click
+const divToShow = '.mini-cart'
+const divPopup = document.querySelector(divToShow);
+const divTrigger = document.querySelector('.cart-trigger')
+
+divTrigger.addEventListener('click', () => {
+    setTimeout(() => {
+        if (!divPopup.classList.contains('show')) {
+            divPopup.classList.add('show')
+        }
+    }, 250);
+})
+
+//close byclick outside
+
+document.addEventListener('click', (e) => {
+    const isClosest = e.target.closest(divToShow)
+    if (!isClosest && divPopup.classList.contains('show')) {
+        divPopup.classList.remove('show');
+    }
+})
