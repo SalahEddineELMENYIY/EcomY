@@ -1356,7 +1356,7 @@ form.search button:hover {
 }
 
 :where(.products .variant, .filter-block:not(.pricing)) input {
-    /*UNKOWN*/
+    /*UNKNOWN*/
     clip: rect(0, 0, 0, 0);
     overflow: hidden;
     position: absolute;
