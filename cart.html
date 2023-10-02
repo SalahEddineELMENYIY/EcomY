@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <style>
+         :where(.mini-cart,.products.cart, .checkout, .products) .thumbnail {
+            position: relative;
+            width: 80px;
+            height: 80px;
+            flex-shrink: 0;
+            margin-right: 1em;
+        }   
+    </style>
 </head>
 
 <body>
@@ -930,6 +940,27 @@
                         <input type="search" placeholder="Your email addresse" required>
                         <button type="submit">Search</button>
                     </form>
+                </div>
+            </div>
+        </div>
+        <!-- modal -->
+        <div id="modal">
+            <div class="modal">
+                <div class="content flexcol">
+                    <div class="image object-cover">
+                        <img src="assets/products/apparel4.jpg" alt="">
+                    </div>
+                    <h2>Get the latest deals and coupons</h2>
+                    <p class="mobile-hide">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, quasi eius. Consequatur mollitia autem reiciendis?</p>
+                    <form action="" class="search">
+                        <span class="icon-large"><i class="ri-mail-line"></i></span>
+                        <input type="mail" placeholder="Your email address">
+                        <button>Subscribe</button>
+                    </form>
+                    <a href="#" class="mini-text">Do not show me this again</a>
+                    <a href="#" class="t-close modalclose flexcenter">
+                        <i class="ri-close-line"></i>
+                    </a>
                 </div>
             </div>
         </div>
